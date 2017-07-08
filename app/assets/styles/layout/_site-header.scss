@@ -1,0 +1,60 @@
+.site-header {
+    background-color: $black;
+    font-family: $main-font-stack;
+    color: #fff;
+    padding: 0 0 4rem;
+
+    @include atSmall {
+        padding: 2.7rem 0 12rem;        
+    }
+
+    &__nav {
+       position: relative;        
+    }
+
+     .menu-icon {
+        background-color: $yellow;
+        color: $black;
+        font-size: 1.5em;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    &__title {
+        color: $yellow;
+        font-size: 100px;
+        font-weight: 100;
+        line-height: 1.023;
+        margin: 4rem 0 0;
+        text-transform: uppercase;
+
+        @include atSmall {
+            font-size: 176px;
+            margin: 8rem 0 0;
+        }
+    }
+
+    &__blurb {
+        font-size: 15px;
+        line-height: 1.667;        
+        padding: 0 0 1rem;
+        width: 70%;
+
+        @include atSmall {
+            width: 55%;
+        }
+    }
+}

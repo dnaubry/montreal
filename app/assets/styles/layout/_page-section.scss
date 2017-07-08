@@ -1,0 +1,15 @@
+.page-section {
+  padding: 4rem 0;
+
+  @include atSmall {
+    padding: 7.5rem 0;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--black {
+    background-color: $black;
+  }
+}

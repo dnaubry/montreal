@@ -1,0 +1,14 @@
+.section-title {
+    color: $yellow;
+    font-size: 50px;
+    margin-top: 0;
+    text-transform: uppercase;
+
+    &--normal {
+        text-transform: none;
+    }
+
+    &--black {
+        color: $black;
+    }
+}

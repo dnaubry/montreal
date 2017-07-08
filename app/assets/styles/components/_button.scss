@@ -1,0 +1,48 @@
+.button {
+    border: 2px solid $yellow;
+    font-family: $main-font-stack;
+    font-size: 13px;
+    transition: all 0.3s ease;
+
+    @include atSmall {
+        font-size: 16.78px;
+    }
+
+    &--black {
+        background-color: $black;
+        border-radius: 30px;
+        color: #fff;
+        padding: 1.5rem 3.5rem;
+        text-transform: uppercase;
+    }
+
+    &--white {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 1.5rem 4rem;
+        text-transform: uppercase;
+
+        @include atSmall {
+            padding: 2rem 5.5rem;            
+        }
+    }
+
+    &--rectangle {
+        background-color: transparent;
+        margin: .5rem;
+        padding: .5rem 2rem;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+
+    &--rectangle-border-white {
+        border: 2px solid #fff;
+    }
+
+    &:hover {
+        background-color: $yellow;
+        cursor: pointer;
+    }
+}

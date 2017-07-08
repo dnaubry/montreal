@@ -1,0 +1,22 @@
+.site-footer {
+  background-color: $black;
+  text-align: center;
+  padding: 8rem 0;
+
+  a {
+    color: $yellow;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .social-icons {
+    margin-top: 3rem;
+
+    img {
+      margin: 1rem;
+    }
+  }
+}
