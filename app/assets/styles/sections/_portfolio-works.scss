@@ -1,0 +1,32 @@
+.portfolio-works {
+  background-color: $black;
+
+  .work-header {
+    background-color: $yellow;
+    padding: 4rem 2rem;
+
+    @include atLarge {
+      padding: 7rem 4.5rem;      
+    }
+
+    &__title {
+      font-size: 30px;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .work {
+    &--dark-brown {
+      background-color: $dark-brown;
+    }
+
+    &--light-brown {
+      background-color: $light-brown;
+    }
+
+    &-button {
+      margin-top: 2.5rem; 
+    }
+  }
+}
