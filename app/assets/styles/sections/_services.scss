@@ -1,0 +1,57 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .service {
+        flex: 0 0 33%;
+        margin-bottom: 4rem;
+
+        &__icon {
+            background-color: $yellow;
+            width: 85px;
+            height: 85px;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);  
+            }
+        }
+
+        &__title {
+            color: $yellow;
+            font-size: 50px;
+            font-weight: 100;
+            letter-spacing: .05em;
+            margin: 1.5rem 0 2rem;
+            text-transform: uppercase;
+            width: 300px;
+
+            @include atSmall {
+                margin: 2rem 0 2.5rem;
+                width: 100%;
+            }
+
+            @include atMedium {
+                margin: 2.5rem 0 3rem;                
+            }
+        }
+
+        &__content {
+            font-size: 15px;
+            letter-spacing: .05em;
+            font-weight: 400;
+
+            @include atSmall {
+                padding-right: 1rem;
+            }
+        }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
