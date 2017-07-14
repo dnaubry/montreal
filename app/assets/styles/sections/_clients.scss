@@ -1,4 +1,5 @@
 .clients {
+  padding-bottom: 7.4rem;
 
   &__logos {
     display: flex;
@@ -8,16 +9,21 @@
     text-align: center;
 
     @include atSmall {
-      margin-top: 7.5rem;
+      margin-top: 5.4rem;
     }
 
     img {
       margin: 2rem;
+      transform: scaleY(.8);
+      position: relative;
+      left: 5px;
+      top: -2px;
     }
   }
 
   &__nav {
-    margin-top: 3rem;
+    margin-top: .7rem;
+    margin-left: 1rem;
     text-align: center;
 
     .nav-1, .nav-2, .nav-3 {

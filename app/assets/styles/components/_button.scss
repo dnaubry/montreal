@@ -2,6 +2,8 @@
     border: 2px solid $yellow;
     font-family: $main-font-stack;
     font-size: 13px;
+    line-height: 9px;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
 
     @include atSmall {
@@ -12,25 +14,31 @@
         background-color: $black;
         border-radius: 30px;
         color: #fff;
-        padding: 1.5rem 3.5rem;
+        margin-left: .5rem;
+        padding: 1.8rem 3.8rem;
         text-transform: uppercase;
     }
 
     &--white {
         background-color: #fff;
-        border-radius: 40px;
+        border-radius: 30px;
         padding: 1.5rem 4rem;
         text-transform: uppercase;
 
         @include atSmall {
-            padding: 2rem 5.5rem;            
+            padding: 1.8rem 5.2rem;   
+        }
+
+        span {
+            padding-left: 1.5rem;
         }
     }
 
     &--rectangle {
         background-color: transparent;
+        font-size: 20px;
         margin: .5rem;
-        padding: .5rem 2rem;
+        padding: 1rem 2.5rem;
 
         &:hover {
             background-color: $yellow;
@@ -58,4 +66,15 @@
         background-color: $yellow;
         cursor: pointer;
     }
+}
+
+.Photography {
+  font-size: 20px;
+  font-family: "Abel";
+  color: rgb(24, 26, 31);
+  line-height: 3.821;
+  position: absolute;
+  left: 1048.391px;
+  top: 2801.199px;
+  z-index: 99;
 }

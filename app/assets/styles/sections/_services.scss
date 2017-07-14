@@ -1,17 +1,28 @@
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding-top: 2rem;
+    width: 100%;
+    padding-bottom: 4.5rem;
+
+    @include atLarge {
+        flex-wrap: nowrap;
+    }
 
     .service {
         flex: 0 0 33%;
-        margin-bottom: 4rem;
+        margin-right: 1rem;
+
+        @include atSmall {
+            margin-right: 0;
+        }
 
         &__icon {
             background-color: $yellow;
-            width: 85px;
-            height: 85px;
+            width: 80px;
+            height: 75px;
             position: relative;
+            left: 7px;
 
             img {
                 position: absolute;
@@ -25,33 +36,47 @@
             color: $yellow;
             font-size: 50px;
             font-weight: 100;
-            letter-spacing: .05em;
+            letter-spacing: 3.9px;
+            line-height: 1.528;            
             margin: 1.5rem 0 2rem;
+            padding-left: .5rem;
             text-transform: uppercase;
-            width: 300px;
 
             @include atSmall {
-                margin: 2rem 0 2.5rem;
-                width: 100%;
+                margin: 2rem 0 2rem;
             }
 
             @include atMedium {
-                margin: 2.5rem 0 3rem;                
+                margin: 1.8rem 0 2rem;                
             }
         }
 
         &__content {
             font-size: 15px;
-            letter-spacing: .05em;
-            font-weight: 400;
+            letter-spacing: 1.2px;
+            line-height: 1.2;
+            width: 285px;
 
             @include atSmall {
-                padding-right: 1rem;
+                width: 250px;
+            }
+
+            @include atLarge {
+                padding-right: 2rem;                            
+                width: 285px;
+            }
+
+            @include atLarge {
+                position: relative;
+                left: 49px;
+                padding-right: 0;
+                transform: scale(1.314, 1);
             }
         }
     }
 
     &__button {
+        padding-bottom: 1.8rem;
         text-align: center;
     }
 }

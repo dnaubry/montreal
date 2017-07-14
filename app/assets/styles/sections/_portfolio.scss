@@ -1,12 +1,14 @@
 .portfolio {
-  &__title {
-    color: $yellow;
-    font-size: 50px;
-    text-transform: uppercase;
+
+  &__content{
+   margin-left: -22px;
+   width: 80.5%;
+   word-break: break-all;
   }
 
   &__nav {
-    margin: 6rem 0 0;
+    margin: 6.7rem 0 0;
+    padding-bottom: 1.2rem;
     text-align: center;
   }
 
@@ -15,6 +17,7 @@
   }
 
   &-more {
+    padding: 7.4rem 0;
     text-align: center;
   }
 }
