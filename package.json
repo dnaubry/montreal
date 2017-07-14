@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "firebase deploy",
+    "firebase-init": "firebase login && firebase init"
   },
   "author": "",
   "license": "ISC",
@@ -20,24 +22,24 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "firebase-tools": "^3.9.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.2.0",
+    "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
     "gulp-usemin": "^0.3.28",
-    "gulp-watch": "^4.3.11",
-    "handlebars-loader": "^1.5.0",
-    "jquery": "^3.2.1",
-    "json-loader": "^0.5.4",
-    "node-normalize-scss": "^3.0.0"
+    "gulp-watch": "^4.3.11"
   },
   "dependencies": {
-    "eslint-plugin-standard": "^3.0.1",
-    "handlebars": "^4.0.8",
-    "handlebars-loader": "^1.5.0",
-    "jquery-smooth-scroll": "^2.2.0"
+    "cloudinary-jquery": "^2.3.0",
+    "jquery": "^3.2.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "jquery-validation": "^1.16.0",
+    "lazysizes": "^4.0.0-rc3",
+    "picturefill": "^3.0.2"
   }
 }

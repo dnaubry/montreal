@@ -10,13 +10,18 @@
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
+
 </head>
 
 <body>
     <header class="site-header">
       <div class="wrapper">
         <div class="site-header__nav">
-          <img src="assets/images/logo.png" alt="Montreal logo" />
+          <img src="assets/images/icons/logo.png" alt="Montreal logo" />
           <div class="menu-icon">&#9776;</div>
           <div class="menu-icon menu-icon-close hidden">&#x2715;</div>
           <div class="nav nav-hidden">
@@ -33,7 +38,7 @@
           Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. 
           Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.
         </p>
-        <button class="button button--black">Who we are?</button>
+        <button id="who-we-are" class="button button--black">Who we are?</button>
       </div>
     </header>
 
@@ -48,7 +53,7 @@
         <div class="services">
           <div class="service">
             <div class="service__icon">
-              <img src="assets/images/design-icon.png" alt="Design icon">
+              <img src="assets/images/icons/design-icon.png" alt="Design icon">
             </div>
             <h3 class="service__title">Design</h3>
             <div class="service__content">
@@ -57,7 +62,7 @@
           </div>
           <div class="service">
             <div class="service__icon">
-              <img src="assets/images/coding-icon.png" alt="Coding icon">
+              <img src="assets/images/icons/coding-icon.png" alt="Coding icon">
             </div>
             <h3 class="service__title">Coding</h3>
             <div class="service__content">
@@ -66,7 +71,7 @@
           </div>
           <div class="service">
             <div class="service__icon">
-              <img src="assets/images/apps-icon.png" alt="Apps icon">
+              <img src="assets/images/icons/apps-icon.png" alt="Apps icon">
             </div>
             <h3 class="service__title">Apps</h3>
             <div class="service__content">
@@ -75,7 +80,7 @@
           </div>
         </div>
         <div class="services__button">
-          <button class="button button--white">Launch Project Now</button>  
+          <button id="launch-project" class="button button--white">Launch Project Now</button>  
         </div>      
       </div>
     </div>
@@ -84,22 +89,22 @@
       <div class="wrapper">
         <div class="stats">
           <div class="stat">
-            <img src="assets/images/projects-icon.png" alt="Projects icon">
+            <img src="assets/images/icons/projects-icon.png" alt="Projects icon">
             <p class="stat__number">345</p>
             <p class="stat__description">Completed Projects</p>
           </div>
           <div class="stat">
-            <img src="assets/images/coffee-icon.png" alt="Coffee icon">
+            <img src="assets/images/icons/coffee-icon.png" alt="Coffee icon">
             <p class="stat__number">983</p>
             <p class="stat__description">Drinked Coffee</p>
           </div>
           <div class="stat">
-            <img src="assets/images/mail-icon.png" alt="Mail icon">
+            <img src="assets/images/icons/mail-icon.png" alt="Mail icon">
             <p class="stat__number">478</p>
             <p class="stat__description">Mails Sent</p>
           </div>
           <div class="stat">
-            <img src="assets/images/awards-icon.png" alt="Awards icon">
+            <img src="assets/images/icons/awards-icon.png" alt="Awards icon">
             <p class="stat__number">48</p>
             <p class="stat__description">Awards Taken</p>
           </div>
@@ -113,41 +118,56 @@
         <p class="generic-content">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
             Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
         <div class="portfolio__nav">
-          <button class="button button--rectangle">All</button>
-          <button class="button button--rectangle">Design</button>
-          <button class="button button--rectangle">Code</button>
-          <button class="button button--rectangle">Photography</button>
-          <button class="button button--rectangle">Apps</button>
+          <button id="all" class="button button--rectangle button--active portfolio-button">All</button>
+          <button id="design" class="button button--rectangle portfolio-button">Design</button>
+          <button id="code" class="button button--rectangle portfolio-button">Code</button>
+          <button id="photography" class="button button--rectangle portfolio-button">Photography</button>
+          <button id="apps" class="button button--rectangle portfolio-button">Apps</button>
         </div>
       </div>
     </div>
-
     <div class="portfolio-works">
-      <div class="grid-row">
-        <div class="grid-col__4"></div>
-        <div class="grid-col__6 work-header">
-          <p class="work-header__title">Super Awesome Work</p>
-          <p class="generic-content">
-            Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
-            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-          </p>
-          <div class="work-button">
-            <button class="button button--rectangle button--rectangle-border-white">View More</button>
-          </div>
+      <div class="portfolio-works-grid">
+        <div class="side">
         </div>
-        <div class="grid-col__6"></div>
-      </div>
-      <div class="grid-row">
-        <div class="grid-col__4 work"></div>
-        <div class="grid-col__4 work work--dark-brown"></div>
-        <div class="grid-col__4 work work--light-brown"></div>
-        <div class="grid-col__4 work work--dark-brown"></div>
+        <div class="main">
+          <div class="portfolio-works-grid__header">
+            <p class="title">Super Awesome Work</p>
+            <p class="generic-content">
+              Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
+              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+            </p>
+            <div class="work-button">
+              <button class="button button--rectangle button--rectangle-border-white portfolio-button--more">View More</button>
+            </div>
+          </div>
+          <img data-tag="design" class="lazyload cld-responsive portfolio-img portfolio-img--wide portfolio-img--is-visible" data-src="https://res.cloudinary.com/dna26/image/upload/w_auto,c_scale/v1499904722/Montreal/design01.jpg" />
+          <img data-tag="design" class="lazyload cld-responsive portfolio-img portfolio-img--is-visible" data-src="https://res.cloudinary.com/dna26/image/upload/w_auto,c_scale/v1499904722/Montreal/design02.jpg" />
+          <img data-tag="design" class="lazyload cld-responsive portfolio-img portfolio-img--is-visible" data-src="https://res.cloudinary.com/dna26/image/upload/w_auto,c_scale/v1499971043/Montreal/design03.jpg" />
+          <img data-tag="design" class="lazyload cld-responsive portfolio-img portfolio-img--is-visible" data-src="https://res.cloudinary.com/dna26/image/upload/w_auto,c_scale/v1499904722/Montreal/design04.jpg" />
+          <img data-tag="design" class="lazyload cld-responsive portfolio-img portfolio-portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/w_auto,c_scale/v1499904722/Montreal/design05.jpg" />
+          <img data-tag="code" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/coding01.jpg" />
+          <img data-tag="code" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/coding02.jpg" />
+          <img data-tag="code" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/coding03.jpg" />
+          <img data-tag="code" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/coding04.jpg" />
+          <img data-tag="code" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/coding05.jpg" />
+          <img data-tag="photography" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/photography01.jpg" />
+          <img data-tag="photography" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/photography02.jpg" />
+          <img data-tag="photography" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/photography03.jpg" />
+          <img data-tag="photography" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/photography04.jpg" />
+          <img data-tag="photography" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/photography05.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app01.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app02.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app03.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app04.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app05.jpg" />
+          <img data-tag="apps" class="lazyload cld-responsive portfolio-img" data-src="https://res.cloudinary.com/dna26/image/upload/v1499904722/Montreal/app06.jpg" />
+        </div>     
       </div>
     </div>
-
-    <div class="portfolio-button page-section">
-          <button class="button button--white">Load more projects</button>
-        </div>
+    <div class="portfolio-more page-section">
+      <button class="button button--white portfolio-button--more">Load more projects</button>
+    </div>
 
     <div id="clients" class="clients page-section page-section--black">
       <div class="wrapper">
@@ -157,10 +177,10 @@
           Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
         </p>
         <div class="clients__logos">
-          <img src="assets/images/client-logo01.png" alt="Simple Star Logo" />
-          <img src="assets/images/client-logo02.png" alt="The Lab Logo" />
-          <img src="assets/images/client-logo03.png" alt="Eshley Jud Logo" />
-          <img src="assets/images/client-logo04.png" alt="Timber Style Logo" />
+          <img src="assets/images/icons/client-logo01.png" alt="Simple Star Logo" />
+          <img src="assets/images/icons/client-logo02.png" alt="The Lab Logo" />
+          <img src="assets/images/icons/client-logo03.png" alt="Eshley Jud Logo" />
+          <img src="assets/images/icons/client-logo04.png" alt="Timber Style Logo" />
         </div>
         <div class="clients__nav">
           <div class="nav-1"></div>
@@ -179,16 +199,25 @@
         </p>
         <div class="contact__section">
           <form class="form">
-            <label for="name" class="label label-name">Name</label>
-            <input id="name" type="text" class="input input--short" />
-            <label for="mail" class="label label-mail">Mail</label>
-            <input id="mail" type="text" class="input input--short" />
-            <label for="subject" class="label label-subject">Subject</label>
-            <input id="subject" type="text" class="input input--long" />
-            <label for="message" class="label label-message">Message...</label>
-            <textarea id="message" class="input input--long"></textarea>
+            <div class="form__section">
+              <label for="name" class="label label-name">Name</label>
+              <input id="name" name="name" type="text" class="input input--short" />
+            </div>
+            <div class="form__section">
+              <label for="mail" class="label label-mail">Mail</label>
+              <input id="mail" name="mail" type="text" class="input input--short" />
+            </div>
+            <div class="form__section">
+              <label for="subject" class="label label-subject">Subject</label>
+              <input id="subject" name="subject" type="text" class="input input--long" />
+            </div>
+            <div class="form__section">
+              <label for="message" class="label label-message">Message...</label>
+              <textarea id="message" name="message" class="input input--long"></textarea>
+            </div>
             <input type="submit" value="Send" class="button button--white button--submit">
           </form>
+          <div class="error"></div>
         </div>
       </div>
     </div>
@@ -198,7 +227,7 @@
         <div class="contact-info">
           <div class="contact-info__item">
             <div class="contact-info__icon bg--black">
-              <img src="assets/images/phone-icon.png" alt="Phone Number Icon" />
+              <img src="assets/images/icons/phone-icon.png" alt="Phone Number Icon" />
             </div>
             <div class="contact-info__details">
               <p>847-939-9359</p>
@@ -206,7 +235,7 @@
           </div>
           <div class="contact-info__item">
             <div class="contact-info__icon bg--black">
-              <img src="assets/images/mail-icon02.png" alt="Mail Icon" />
+              <img src="assets/images/icons/mail-icon02.png" alt="Mail Icon" />
             </div>
             <div class="contact-info__details">
               <p>montreal@mail.com</p>
@@ -214,7 +243,7 @@
           </div>
           <div class="contact-info__item">
             <div class="contact-info__icon bg--black">
-              <img src="assets/images/address-icon.png" alt="Address Icon" />
+              <img src="assets/images/icons/address-icon.png" alt="Address Icon" />
             </div>
             <div class="contact-info__details">
               <p>4116 Oak Avenue</p>
@@ -225,6 +254,8 @@
       </div>
     </div>
 
+    <div class="scroll-to-top">&#8593;</div>
+
     <footer class="site-footer">
       <p class="generic-content generic-content--white generic-content--center">
         &copy; 2016 - <a href="http://www.graphberry.com/item/montreal-creative-portfolio-theme" target="_blank">
@@ -233,11 +264,11 @@
          All Right Reserved
       </p>
       <div class="social-icons">
-        <img src="assets/images/Facebook.png" alt="Facebook Icon" />
-        <img src="assets/images/Twitter.png" alt="Twitter Icon" />
-        <img src="assets/images/Dribble.png" alt="Dribble Icon" />
-        <img src="assets/images/Google.png" alt="Google Icon" />
-        <img src="assets/images/Youtube.png" alt="YouTube Icon" />
+        <img src="assets/images/icons/Facebook.png" alt="Facebook Icon" />
+        <img src="assets/images/icons/Twitter.png" alt="Twitter Icon" />
+        <img src="assets/images/icons/Dribble.png" alt="Dribble Icon" />
+        <img src="assets/images/icons/Google.png" alt="Google Icon" />
+        <img src="assets/images/icons/Youtube.png" alt="YouTube Icon" />
       </div>
     </footer>
   

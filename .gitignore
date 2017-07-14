@@ -31,3 +31,7 @@ dwsync.xml
 #files
 *.psd
 app/temp/
+app/assets/images/*.jpg
+docs/
+.firebaserc
+firebase.json

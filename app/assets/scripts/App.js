@@ -1,36 +1,25 @@
 import $ from 'jquery';
-import smoothScroll from 'jquery-smooth-scroll';
+import 'cloudinary-jquery';
+import Menu from './modules/Menu';
+import Portfolio from './modules/Portfolio';
+import Form from './modules/Form';
+import ScrollToTop from './modules/ScrollToTop';
+
+$.cloudinary.config({cloud_name: 'dna86', api_key: '888479551384617'});
 
 $(document).ready(function() {
-  function toggleMenu() {
-    $('.nav').slideToggle();
-    $('.menu-icon-close').fadeToggle();
-  }
+  Menu.init();
+  Portfolio.init();
+  Form.init();
+  ScrollToTop.init();
 
-  $('.menu-icon').click(toggleMenu);
+  $('#who-we-are').click(function() {
+    const height = $('#services').position();
+    window.scrollTo(height.left, height.top);
+  })
 
-  $('.nav li a').smoothScroll({
-    afterScroll: toggleMenu,
-    speed: 'auto'
-  });
-
-  $('.input')
-    .focus(function() {
-      $('.label-' + this.id).addClass('label-focus');
-      $(this).removeClass('input-warning');
-    }).blur(function() {
-      if (!$(this).val()) {
-        $('.label-' + this.id).removeClass('label-focus');
-        $(this).addClass('input-warning');
-      } else {
-        $(this).removeClass('input-warning');
-      }
-    });
-
-  $('form').submit(function(event) {
-    event.preventDefault();
-    $('.contact__section').html(function() {
-      return '<p>This is not a real form, but thanks!</p>';
-    });
+  $('#launch-project').click(function() {
+    const height = $('#contact').position();
+    window.scrollTo(height.left, height.top);
   });
 });

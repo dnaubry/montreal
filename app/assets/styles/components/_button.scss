@@ -41,6 +41,19 @@
         border: 2px solid #fff;
     }
 
+    &--active {
+        background-color: $yellow;
+    }
+
+    &:disabled {
+        border: 2px solid #808080;
+
+        &:hover {
+            background-color: transparent;
+            cursor: auto;
+        }
+    }
+
     &:hover {
         background-color: $yellow;
         cursor: pointer;
