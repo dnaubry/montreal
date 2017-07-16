@@ -13,14 +13,14 @@
       box-sizing: border-box;
       margin: 0 auto;
       width: 300px;
-      position: relative;
-      left: 10px;
 
       @include atMedium {
         width: 630px;
       }
 
       @include atLarge {
+        position: relative;
+        left: 10px;
         width: 1000px;
       }
 
