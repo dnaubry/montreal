@@ -29,7 +29,7 @@
     .portfolio-img {
       flex: 0 0 100%;
       display: none;
-      height: 600px;
+      height: 300px;
       max-width: 100%;
 
       @include atMedium {
@@ -45,7 +45,7 @@
 
     .portfolio-img--wide {
       flex: 0 0 100%;
-      height: 600px;
+      height: 300px;
       max-width: 100%;
 
       @include atMedium {

@@ -1,15 +1,26 @@
 .portfolio {
 
   &__content{
-   margin-left: -22px;
    width: 80.5%;
    word-break: break-all;
+
+   @include atSmall {
+    margin-left: -22px;    
+   }
   }
 
   &__nav {
     margin: 6.7rem 0 0;
     padding-bottom: 1.2rem;
-    text-align: center;
+    margin: 2rem;
+    margin-bottom: 0;
+    width: 50%;
+
+    @include atSmall {
+      margin: 0;
+      text-align: center;      
+      width: 100%;
+    }
   }
 
   &__works {

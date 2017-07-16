@@ -4,11 +4,16 @@
   padding: 5.5rem 0;
 
   p {
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
-    line-height: 3.842;
-    position: relative;
-    left: 20px;
+    line-height: 1.25;
+
+    @include atSmall {
+      font-size: 25px;
+      line-height: 3.842;
+      position: relative;      
+      left:20px;
+    }
   }
 
   a {
@@ -22,11 +27,14 @@
 
   .social-icons {
     margin-top: .3rem;
-    position: relative;
-    left: 10px;
 
     img {
       margin: 1rem;
+    }
+
+    @include atSmall {
+      position: relative;
+      left: 10px;
     }
   }
 }

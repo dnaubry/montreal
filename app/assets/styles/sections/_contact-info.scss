@@ -12,8 +12,12 @@
       flex: 0 0 270px;
       display: flex;
       align-items: center;
-      margin: 1.7rem 3.4rem;
-      margin-right: 4.6rem;
+      margin: 2rem;
+
+      @include atSmall {
+        margin: 1.7rem 3.4rem;
+        margin-right: 4.6rem;
+      }
     }
 
     &__icon {
