@@ -34,9 +34,9 @@
 
         &__title {
             color: $yellow;
-            font-size: 50px;
+            font-size: 3.125em;
             font-weight: 100;
-            letter-spacing: 3.9px;
+            letter-spacing: 0.244em;
             line-height: 1.528;            
             margin: 1.5rem 0 2rem;
             padding-left: .5rem;
@@ -52,8 +52,8 @@
         }
 
         &__content {
-            font-size: 15px;
-            letter-spacing: 1.2px;
+            font-size: 0.938em;
+            letter-spacing: 0.075em;
             line-height: 1.2;
             width: 285px;
 

@@ -19,11 +19,7 @@
   .stat {
     text-align: center;
     margin: 1rem;
-   
-    @include atLarge {
-      margin: 0 2.7rem;
-      margin-right: 4.7rem;
-    }
+    width: 220px;
 
     &:first-of-type, &:nth-of-type(2) {
       margin-bottom: 3rem;
@@ -35,23 +31,22 @@
 
     &__number {
       color: #fff;
-      font-size: 40px;
+      font-size: 2.500em;
       margin: .5rem;
 
       @include atSmall {
-        font-size: 60px;
+        font-size: 3.750em;
         margin: 2.5rem;
       }
     }
 
     &__description {
       color: $yellow;
-      font-size: 16px;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.094em;
       text-transform: uppercase;
 
       @include atSmall {
-        font-size: 20px;        
+        font-size: 1.250em;        
       }
     }
   }

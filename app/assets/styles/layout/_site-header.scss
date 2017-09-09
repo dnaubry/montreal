@@ -1,6 +1,5 @@
 .site-header {
     background-color: $black;
-    font-family: $main-font-stack;
     color: #fff;
     padding: 2rem 0 4rem;
 
@@ -51,23 +50,23 @@
 
     &__title {
         color: $yellow;
-        font-size: 90px;
+        font-size: 5.625em;
         font-weight: 100;
-        letter-spacing: 13px;
+        letter-spacing: .074em;
         line-height: 1.023;
         margin: 4rem 0 0;
         padding-left: .1rem;
         text-transform: uppercase;
 
         @include atSmall {
-            font-size: 176px;
+            font-size: 11em;
             margin: 10.7rem .5rem 0;
         }
     }
 
     &__blurb {
-        font-size: 15px;
-        letter-spacing: 1.059px;
+        font-size: 0.938em;
+        letter-spacing: 0.066em;
         line-height: 1.667;
         hyphens: auto;
         margin-top: .7rem;      

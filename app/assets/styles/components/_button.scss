@@ -1,13 +1,13 @@
 .button {
     border: 2px solid $yellow;
-    font-family: $main-font-stack;
-    font-size: 13px;
-    line-height: 9px;
-    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: 0.813em;
+    line-height: .45;
+    letter-spacing: 0.063em;
     transition: all 0.3s ease;
 
     @include atSmall {
-        font-size: 16.78px;
+        font-size: 1.049em;
     }
 
     &--black {
@@ -28,15 +28,11 @@
         @include atSmall {
             padding: 1.8rem 5.2rem;   
         }
-
-        span {
-            padding-left: 1.5rem;
-        }
     }
 
     &--rectangle {
         background-color: transparent;
-        font-size: 20px;
+        font-size: 1.250em;
         margin: .5rem;
         padding: 1rem 2.5rem;
 
@@ -66,15 +62,4 @@
         background-color: $yellow;
         cursor: pointer;
     }
-}
-
-.Photography {
-  font-size: 20px;
-  font-family: "Abel";
-  color: rgb(24, 26, 31);
-  line-height: 3.821;
-  position: absolute;
-  left: 1048.391px;
-  top: 2801.199px;
-  z-index: 99;
 }

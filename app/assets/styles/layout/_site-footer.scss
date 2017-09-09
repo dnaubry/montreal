@@ -4,15 +4,15 @@
   padding: 5.5rem 0;
 
   p {
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.250em;
+    letter-spacing: 0.125em;
     line-height: 1.25;
 
     @include atSmall {
-      font-size: 25px;
+      font-size: 1.563em;
       line-height: 3.842;
       position: relative;      
-      left:20px;
+      left: 20px;
     }
   }
 
