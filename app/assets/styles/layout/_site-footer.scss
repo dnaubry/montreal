@@ -11,8 +11,6 @@
     @include atSmall {
       font-size: 1.563em;
       line-height: 3.842;
-      position: relative;      
-      left: 20px;
     }
   }
 
@@ -30,11 +28,6 @@
 
     img {
       margin: 1rem;
-    }
-
-    @include atSmall {
-      position: relative;
-      left: 10px;
     }
   }
 }
